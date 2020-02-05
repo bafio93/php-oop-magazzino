@@ -14,9 +14,9 @@ $prodotto_1->nome = "Ticket to Ride";
 $prodotto_1->prezzo = 45.50;
 $prodotto_1->anno = "2004";
 $prodotto_1->BGG_rank = 7.44;
-echo "<pre><h3>Prodotto:</h3>";
-var_dump($prodotto_1);
-echo "</pre>";
+$prodotto_1->visualizza();
+$prodotto_1->offerta(0);
+$prodotto_1->gs_rank();
 // Creo un'istanza di un videogioco:
 $prodotto_2=new VideoGioco();
 $prodotto_2->nome = "Stardew Valley";
@@ -24,9 +24,8 @@ $prodotto_2->prezzo = 13.99;
 $prodotto_2->anno = "2016";
 $prodotto_2->STEAM_rank = 0.97;
 $prodotto_2->genere = ["Farming Sim","RPG","Pixel Art"];
-echo "<pre><h3>Prodotto:</h3>";
-var_dump($prodotto_2);
-echo "</pre>";
+$prodotto_2->visualizza();
+$prodotto_2->offerta(0.5);
 $prodotto_2->vg_rank();
 
 

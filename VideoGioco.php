@@ -7,7 +7,7 @@ class VideoGioco extends Prodotto {
     public $genere;
     // Includo una funzione per valutare, in percentuale, il gradimento.
     public function vg_rank() {
-        echo "<p><strong>".($this->STEAM_rank*100)."%</strong> dei voti positivi su STEAM.</p>";
+        echo "<p>Videogioco con <strong>".($this->STEAM_rank*100)."%</strong> dei voti positivi su STEAM.</p>";
     }
 };
 
